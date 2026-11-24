@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio – Noa Bigeard</title>
+    <meta
+      name="description"
+      content="Portfolio de Noa Bigeard, étudiant en troisième année de BUT Informatique et passionné par le développement logiciel." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#accueil">Noa Bigeard</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu">
+          Menu
+        </button>
+        <nav aria-label="Navigation principale">
+          <ul id="menu" class="menu">
+            <li><a href="#accueil" aria-current="page">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="assets/docs/cv.pdf">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section id="accueil" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Noa Bigeard</h1>
+            <p class="lead">
+              Étudiant en informatique à l'IUT Nord Franche Comté
+            </p>
+            <p>
+              Je suis étudiant en troisième année de BUT Informatique. Je
+              développe mes compétences en programmation et en conception
+              logicielle à travers ma formation et mes projets.
+            </p>
+            <div class="actions">
+              <a class="btn" href="#projets">Voir mes projets</a>
+              <a class="btn btn-secondary" href="assets/docs/cv.pdf" download
+                >Télécharger mon CV</a
+              >
+            </div>
+          </div>
+          <figure class="portrait">
+            <img
+              src="assets/images/PhotoNoa.png"
+              alt="Portrait de Noa Bigeard"
+              width="320"
+              height="320"
+              filter="grayscale(100%)" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="apropos" class="section">
+        <div class="container narrow">
+          <h2>Qui suis-je ?</h2>
+          <p>
+            Je m'appelle Noa Bigeard et je suis en troisième année de BUT
+            Informatique à l'IUT Nord Franche-Comté. J'aime apprendre et mettre
+            mes connaissances en pratique dans différents projets.
+          </p>
+          <p>
+            Je m'intéresse particulièrement au développement logiciel et aux
+            projets en équipe. Ce portfolio présente mon parcours, mes
+            compétences et mes réalisations.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container narrow">
+          <h2>Formation</h2>
+          <ul class="timeline">
+            <li>
+              <h3>Bachelor Universitaire de Technologie</h3>
+              <p class="meta">IUT Nord Franche-Comté – 2024 à 2027</p>
+              <p>
+                Troisième année de BUT Informatique, parcours développement
+                logiciel.
+              </p>
+            </li>
+            <li>
+              <h3>Baccalauréat général</h3>
+              <p class="meta">Obtenu en 2024</p>
+              <p>
+                Spécialités Mathématiques et Physique-Chimie, avec l’option
+                Activités Physiques, Sportives et Artistiques (APSA).
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="section">
+      <div class="container narrow">
+        <h2>Veille informatique</h2>
+        <p>[Sources suivies, sujets qui t’intéressent, lien vers ton blog si tu en as un.]</p>
+      </div>
+    </section> -->
+
+      <section id="projets" class="section">
+        <div class="container">
+          <h1>Projets</h1>
+          <p class="lead">
+            Une sélection de projets réalisés pendant ma formation et dans le
+            cadre de mes expériences personnelles.
+          </p>
+
+          <div class="project-showcase">
+            <a
+              class="project-card project-card-quixo"
+              href="projets.html#quixo">
+              <span class="project-card-number">01</span>
+              <span class="project-card-title">Quixo</span>
+              <span class="project-card-link">Découvrir le projet</span>
+            </a>
+            <a
+              class="project-card project-card-two"
+              href="projets.html#projet-2">
+              <span class="project-card-number">02</span>
+              <span class="project-card-title">Mintonette Cup</span>
+              <span class="project-card-link">Découvrir le projet</span>
+            </a>
+            <a
+              class="project-card project-card-three"
+              href="projets.html#projet-3">
+              <span class="project-card-number">03</span>
+              <span class="project-card-title">MealBoard</span>
+              <span class="project-card-link">Découvrir le projet</span>
+            </a>
+            <a
+              class="project-card project-card-four"
+              href="projets.html#projet-4">
+              <span class="project-card-number">04</span>
+              <span class="project-card-title">NBA Shop</span>
+              <span class="project-card-link">Découvrir le projet</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="competences" class="section section-alt skills-section-index">
+        <div class="container">
+          <h1>Compétences</h1>
+
+          <section class="skills-category" aria-labelledby="front-end-index">
+            <h2 id="front-end-index">Front-end</h2>
+            <div class="skills-grid">
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer" aria-label="HTML sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></span>
+                <span class="skill-name">HTML / CSS</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="JavaScript sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""></span>
+                <span class="skill-name">JavaScript</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Vue.js" target="_blank" rel="noopener noreferrer" aria-label="Vue.js sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt=""></span>
+                <span class="skill-name">Vue.js</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="skills-category" aria-labelledby="back-end-index">
+            <h2 id="back-end-index">Back-end</h2>
+            <div class="skills-grid skills-grid-five">
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Java_(langage)" target="_blank" rel="noopener noreferrer" aria-label="Java sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt=""></span>
+                <span class="skill-name">Java</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank" rel="noopener noreferrer" aria-label="Python sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt=""></span>
+                <span class="skill-name">Python</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Node.js" target="_blank" rel="noopener noreferrer" aria-label="Node.js sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt=""></span>
+                <span class="skill-name">Node.js</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/PostgreSQL" target="_blank" rel="noopener noreferrer" aria-label="PostgreSQL sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt=""></span>
+                <span class="skill-name">PostgreSQL</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/MySQL" target="_blank" rel="noopener noreferrer" aria-label="MySQL sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt=""></span>
+                <span class="skill-name">MySQL</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="skills-category" aria-labelledby="tools-index">
+            <h2 id="tools-index">Outils et méthodes</h2>
+            <div class="skills-grid skills-grid-five">
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Git" target="_blank" rel="noopener noreferrer" aria-label="Git sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt=""></span>
+                <span class="skill-name">Git / GitHub</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Jenkins_(logiciel)" target="_blank" rel="noopener noreferrer" aria-label="Jenkins sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt=""></span>
+                <span class="skill-name">Jenkins</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/M%C3%A9thode_agile" target="_blank" rel="noopener noreferrer" aria-label="Méthodes Agile sur Wikipédia">
+                <span class="skill-logo"><span class="text-logo">Agile</span></span>
+                <span class="skill-name">Méthodes Agile</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Diagramme_de_Gantt" target="_blank" rel="noopener noreferrer" aria-label="Diagramme de Gantt sur Wikipédia">
+                <span class="skill-logo"><span class="text-logo">Gantt</span></span>
+                <span class="skill-name">Gantt</span>
+              </a>
+              <a class="skill-card" href="https://fr.wikipedia.org/wiki/Trello" target="_blank" rel="noopener noreferrer" aria-label="Trello sur Wikipédia">
+                <span class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" alt=""></span>
+                <span class="skill-name">Trello</span>
+              </a>
+            </div>
+          </section>
+
+          <div class="personal-skills">
+            <h2>Compétences personnelles et langues</h2>
+            <ul class="tags">
+              <li>Curiosité et envie d’apprendre</li>
+              <li>Esprit d’équipe</li>
+              <li>Organisation et autonomie</li>
+              <li>Résolution de problèmes</li>
+              <li>Français – langue maternelle</li>
+              <li>Anglais – niveau technique</li>
+              <li>Espagnol – niveau scolaire</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h1>Contact</h1>
+          <p class="lead">
+            Si vous avez une question n'hésitez pas !
+          </p>
+          <div class="contact-layout">
+            <form
+              class="form"
+              action="https://formsubmit.co/nooabigeard@gmail.com"
+              method="POST">
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+              <div class="field">
+                <label for="nom">Nom <span aria-hidden="true">*</span></label
+                ><input
+                  id="nom"
+                  name="nom"
+                  type="text"
+                  autocomplete="family-name"
+                  required />
+              </div>
+              <div class="field">
+                <label for="prenom">Prénom</label
+                ><input
+                  id="prenom"
+                  name="prenom"
+                  type="text"
+                  autocomplete="given-name" />
+              </div>
+              <div class="field">
+                <label for="email"
+                  >Adresse e-mail <span aria-hidden="true">*</span></label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required />
+              </div>
+              <div class="field">
+                <label for="objet"
+                  >Objet <span aria-hidden="true">*</span></label
+                ><input id="objet" name="objet" type="text" required />
+              </div>
+              <div class="field">
+                <label for="message"
+                  >Message <span aria-hidden="true">*</span></label
+                ><textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required></textarea>
+              </div>
+              <div class="field check">
+                <input id="rgpd" name="rgpd" type="checkbox" required /><label
+                  for="rgpd"
+                  >J’accepte que mes données soient utilisées pour me
+                  recontacter. Aucun autre traitement n’est effectué.
+                  <span aria-hidden="true">*</span></label
+                >
+              </div>
+              <p class="meta">* Champ obligatoire</p>
+              <button class="btn" type="submit">Envoyer le message</button>
+            </form>
+            <aside class="card" aria-labelledby="coord">
+              <h2 id="coord">Coordonnées</h2>
+              <ul class="plain">
+                <li>
+                  <a href="mailto:noa.bigeard@exemple.fr"
+                    >nooabigeard@gmail.com</a
+                  >
+                </li>
+                <li><a href="tel:+33000000000">07 68 60 40 19</a></li>
+                <li><a href="https://github.com/NoaBigeard">GitHub</a></li>
+                <li>
+                  <a href="https://www.linkedin.com/in/noa-bigeard/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="assets/docs/cv.pdf" download
+                    >Télécharger mon CV (PDF)</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Noa Bigeard</p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/NoaBigeard">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/noa-bigeard/">LinkedIn</a></li>
+          <li><a href="assets/docs/cv.pdf" download>Télécharger mon CV</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
