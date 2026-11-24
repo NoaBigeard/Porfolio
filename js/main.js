@@ -1,5 +1,42 @@
 // Menu mobile : ouverture / fermeture accessible
 document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.querySelector('#contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const status = contactForm.querySelector('.form-status');
+      submitButton.disabled = true;
+      submitButton.textContent = 'Envoi en cours...';
+      status.textContent = '';
+      status.className = 'form-status';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || "Impossible d'envoyer le message.");
+        }
+
+        contactForm.reset();
+        status.textContent = 'Votre message a bien été envoyé.';
+        status.classList.add('is-success');
+      } catch (error) {
+        status.textContent = error.message || "Une erreur est survenue lors de l'envoi.";
+        status.classList.add('is-error');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Envoyer le message';
+      }
+    });
+  }
+
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.site-header nav');
   if (!toggle || !nav) return;

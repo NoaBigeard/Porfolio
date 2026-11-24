@@ -257,15 +257,17 @@
           <div class="contact-layout">
             <form
               class="form"
-              action="https://formsubmit.co/nooabigeard@gmail.com"
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
               method="POST">
-            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="access_key" value="2ee03468-c5e9-4a2b-8cf9-9371ff095dca" />
+              <input type="hidden" name="subject" value="Nouveau message depuis le portfolio" />
+              <input type="hidden" name="from_name" value="Portfolio Noa Bigeard" />
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
               <div class="field">
                 <label for="nom">Nom <span aria-hidden="true">*</span></label
                 ><input 
-                  id="nom"
+                  id="nom"  
                   name="nom"
                   type="text"
                   autocomplete="family-name"
@@ -313,6 +315,7 @@
               </div>
               <p class="meta">* Champ obligatoire</p>
               <button class="btn" type="submit">Envoyer le message</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
             </form>
             <aside class="card" aria-labelledby="coord">
               <h2 id="coord">Coordonnées</h2>

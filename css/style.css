@@ -687,6 +687,17 @@ textarea:focus {
 .form .btn {
   justify-self: start;
 }
+.form-status {
+  min-height: 1.65em;
+  margin: 0;
+  font-weight: 600;
+}
+.form-status.is-success {
+  color: var(--green-700);
+}
+.form-status.is-error {
+  color: #a33a32;
+}
 
 /* Footer */
 .site-footer {
