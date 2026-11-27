@@ -325,21 +325,25 @@ a:hover {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(130px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(6, minmax(110px, 1fr));
+  gap: 1rem;
   max-width: 940px;
   margin-inline: auto;
 }
 .skills-category:last-child .skills-grid {
-  grid-template-columns: repeat(5, minmax(130px, 1fr));
+  grid-template-columns: repeat(6, minmax(110px, 1fr));
+  max-width: 940px;
+}
+.skills-section-index .skills-grid-five {
+  grid-template-columns: repeat(6, minmax(110px, 1fr));
   max-width: 940px;
 }
 .skills-category:last-child .skill-card:nth-child(6) {
-  grid-column: 3;
+  grid-column: auto;
 }
 .skill-card {
   display: flex;
-  min-height: 190px;
+  min-height: 150px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -364,12 +368,12 @@ a:hover {
 }
 .skill-logo {
   display: grid;
-  height: 110px;
+  height: 82px;
   place-items: center;
 }
 .skill-logo img {
-  width: 96px;
-  max-height: 110px;
+  width: 76px;
+  max-height: 82px;
   object-fit: contain;
   filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.35));
   transition: transform 180ms ease;
@@ -413,8 +417,8 @@ a:hover {
 }
 .text-logo {
   display: grid;
-  width: 96px;
-  height: 96px;
+  width: 76px;
+  height: 76px;
   place-items: center;
   border: 3px solid var(--green-900);
   border-radius: 50%;
@@ -457,6 +461,18 @@ a:hover {
   display: grid;
   gap: 2.5rem;
   margin-top: 2.5rem;
+}
+.projects #projet-3 {
+  order: 1;
+}
+.projects #projet-4 {
+  order: 2;
+}
+.projects #projet-2 {
+  order: 3;
+}
+.projects #quixo {
+  order: 4;
 }
 .project {
   display: grid;
@@ -620,19 +636,19 @@ a:hover {
   transform: translateY(0);
 }
 .project-card-quixo {
-  --card-image: url("../assets/images/projetQuixo.png");
+  --card-image: url("../assets/images/projetQuixo.webp");
   --card-background: linear-gradient(145deg, #b8cfb9, #789681 58%, #4f705e);
 }
 .project-card-two {
-  --card-image: url("../assets/images/projetMintonette.png");
+  --card-image: url("../assets/images/projetMintonette.webp");
   --card-background: linear-gradient(145deg, #b8cdcc, #789997 55%, #4f716f);
 }
 .project-card-three {
-  --card-image: url("../assets/images/projetMeal.png");
+  --card-image: url("../assets/images/projetMeal.webp");
   --card-background: linear-gradient(145deg, #d8d8c8, #91aa98 48%, #617b6a);
 }
 .project-card-four {
-  --card-image: url("../assets/images/projetNBAShop.png");
+  --card-image: url("../assets/images/projetNBAShop.webp");
   --card-background: linear-gradient(145deg, #c2cec5, #879b90 52%, #5d7666);
 }
 
@@ -784,14 +800,11 @@ textarea:focus {
   }
   .project-showcase {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     min-height: 0;
   }
   .project-card {
     min-height: 22rem;
-  }
-  .project-card:last-child {
-    grid-column: span 2;
   }
   .skills-section h1 {
     margin-bottom: 2rem;
@@ -817,6 +830,12 @@ textarea:focus {
 }
 
 @media (max-width: 420px) {
+  .project-showcase {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .project-card {
+    min-height: 18rem;
+  }
   .skills-grid,
   .skills-category:last-child .skills-grid {
     grid-template-columns: repeat(2, minmax(90px, 1fr));

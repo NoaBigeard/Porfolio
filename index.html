@@ -12,6 +12,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:wght@400;500;600&display=swap"
       rel="stylesheet" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/PhotoNoa.webp"
+      fetchpriority="high" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
   </head>
@@ -62,11 +67,12 @@
           </div>
           <figure class="portrait">
             <img
-              src="assets/images/PhotoNoa.png"
+              src="assets/images/PhotoNoa.webp"
               alt="Portrait de Noa Bigeard"
               width="320"
               height="320"
-              filter="grayscale(100%)" />
+              fetchpriority="high"
+              decoding="async" />
           </figure>
         </div>
       </section>
@@ -75,15 +81,15 @@
         <div class="container narrow">
           <h2>Qui suis-je ?</h2>
           <p>
-            Curieux de nature. J'aime comprendre comment un logiciel
-            fonctionne et aller voir ce qui se cache derrière une application.
-            Le BUT Informatique me fait apprendre autant par la pratique que par
-            les projets menés en équipe.
+            Curieux de nature. J'aime comprendre comment un logiciel fonctionne
+            et aller voir ce qui se cache derrière une application. Le BUT
+            Informatique me fait apprendre autant par la pratique que par les
+            projets menés en équipe.
           </p>
           <p>
             Je m'intéresse particulièrement au développement logiciel et aux
             projets en équipe. Ce portfolio présente mon parcours, mes
-            compétences et mes réalisations.  
+            compétences et mes réalisations.
           </p>
         </div>
       </section>
@@ -129,31 +135,31 @@
 
           <div class="project-showcase">
             <a
-              class="project-card project-card-quixo"
-              href="projets.html#quixo">
-              <span class="project-card-number">01</span>
-              <span class="project-card-title">Quixo</span>
-              <span class="project-card-link">Découvrir le projet</span>
-            </a>
-            <a
-              class="project-card project-card-two"
-              href="projets.html#projet-2">
-              <span class="project-card-number">02</span>
-              <span class="project-card-title">Mintonette Cup</span>
-              <span class="project-card-link">Découvrir le projet</span>
-            </a>
-            <a
               class="project-card project-card-three"
               href="projets.html#projet-3">
-              <span class="project-card-number">03</span>
+              <span class="project-card-number">01</span>
               <span class="project-card-title">MealBoard</span>
               <span class="project-card-link">Découvrir le projet</span>
             </a>
             <a
               class="project-card project-card-four"
               href="projets.html#projet-4">
-              <span class="project-card-number">04</span>
+              <span class="project-card-number">02</span>
               <span class="project-card-title">NBA Shop</span>
+              <span class="project-card-link">Découvrir le projet</span>
+            </a>
+            <a
+              class="project-card project-card-two"
+              href="projets.html#projet-2">
+              <span class="project-card-number">03</span>
+              <span class="project-card-title">Mintonette Cup</span>
+              <span class="project-card-link">Découvrir le projet</span>
+            </a>
+            <a
+              class="project-card project-card-quixo"
+              href="projets.html#quixo">
+              <span class="project-card-number">04</span>
+              <span class="project-card-title">Quixo</span>
               <span class="project-card-link">Découvrir le projet</span>
             </a>
           </div>
@@ -164,7 +170,7 @@
         id="competences"
         class="section section-alt skills-section-index">
         <div class="container">
-          <h1>Compétences</h1>
+          <h1>Compétences techniques</h1>
 
           <section class="skills-category" aria-labelledby="front-end-index">
             <h2 id="front-end-index">Front-end</h2>
@@ -279,6 +285,19 @@
                 /></span>
                 <span class="skill-name">MySQL</span>
               </a>
+              <a
+                class="skill-card"
+                href="https://fr.wikipedia.org/wiki/MongoDB"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MongoDB sur Wikipédia">
+                <span class="skill-logo"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                    alt=""
+                /></span>
+                <span class="skill-name">MongoDB</span>
+              </a>
             </div>
           </section>
 
@@ -297,6 +316,19 @@
                     alt=""
                 /></span>
                 <span class="skill-name">Git / GitHub</span>
+              </a>
+              <a
+                class="skill-card"
+                href="https://fr.wikipedia.org/wiki/Docker_(logiciel)"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Docker sur Wikipédia">
+                <span class="skill-logo"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                    alt=""
+                /></span>
+                <span class="skill-name">Docker</span>
               </a>
               <a
                 class="skill-card"
